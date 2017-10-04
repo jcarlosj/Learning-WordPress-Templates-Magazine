@@ -15,6 +15,9 @@
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' )?>" />
                     </a>
+                    <nav id="site-navigation" class="main-navigation" role="navigation">
+                        <?php wp_nav_menu( array( 'theme_location' => 'menu_principal' ) ); ?>
+                    </nav>
                 </div>
             </header>
             <div id="container" class="container">
