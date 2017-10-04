@@ -21,7 +21,7 @@
                     <nav id="site-navigation" class="main-navigation" role="navigation">
                         <?php wp_nav_menu( array( 'theme_location' => 'menu_principal' ) ); ?>
                     </nav>
-                    <div class="clear"></div>
+                    <div class="clearfix"></div>
                 </div>
             </header>
             <div id="container" class="container">
