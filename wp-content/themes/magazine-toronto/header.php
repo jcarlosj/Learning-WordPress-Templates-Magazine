@@ -11,11 +11,10 @@
         <div class="page">
             <header id="masthead" class="site-header" role="banner">
                 <div class="container">
-                    <h1 class="site-title">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' )?>" />
-                        </a>
-                    </h1>
+                    <!-- Website Logo -->
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' )?>" />
+                    </a>
                 </div>
             </header>
             <div id="container" class="container">
