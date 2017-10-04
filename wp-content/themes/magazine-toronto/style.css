@@ -19,6 +19,33 @@ html {
 header {
     background-color: #A00622;
 }
+header .logo {
+    float: left;
+    width: 350px;
+}
+header .logo img {
+    width: 350px;
+}
+header nav {
+    float: right;
+    margin-top: 30px;
+    width: 500px;
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
 
 .container {
     margin: 0 auto;

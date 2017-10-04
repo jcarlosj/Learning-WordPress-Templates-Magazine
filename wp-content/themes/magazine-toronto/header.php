@@ -12,12 +12,16 @@
             <header id="masthead" class="site-header" role="banner">
                 <div class="container">
                     <!-- Website Logo -->
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' )?>" />
-                    </a>
+                    <div class="logo">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg" alt="<?php bloginfo( 'name' )?>" />
+                        </a>
+                    </div>
+                    <!-- Website Main Menu -->
                     <nav id="site-navigation" class="main-navigation" role="navigation">
                         <?php wp_nav_menu( array( 'theme_location' => 'menu_principal' ) ); ?>
                     </nav>
+                    <div class="clear"></div>
                 </div>
             </header>
             <div id="container" class="container">
