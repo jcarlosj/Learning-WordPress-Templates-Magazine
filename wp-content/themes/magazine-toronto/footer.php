@@ -9,7 +9,7 @@
             <div class="clearfix"></div>
             <div class="copyright">
                 <p>Visita a Toronto <?php echo date( 'Y' ); ?></p>
-            </div>
+            </div>  <!-- .copyright -->
         </footer>
     </body>
 </html>
