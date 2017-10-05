@@ -11,6 +11,12 @@
         'menu_principal' => __( 'Menu principal', 'Magazine' )
     ) );
 
+    /* Implementa la función de imagen destacada al contenido de las páginas 'page.php' */
+    add_theme_support( 'post-thumbnails' );
+
+    /* Define NUEVOS tamaños predeterminados para las imágenes */
+    add_image_size( 'imagen-destacada', 1100, 418, true );
+
     /* Ocultar la barra de administración en el FrontEnd cuando se está loguedo */
     add_filter( 'show_admin_bar', '__return_false' );
 
