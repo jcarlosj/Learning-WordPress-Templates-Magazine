@@ -1,4 +1,4 @@
 <div id="secondary" class="secondary">
-    <p>Este es el sidebar</p>
+    <?php dynamic_sidebar( 'sidebar-2-' ); ?>
 </div>
 <div class="clearfix"></div>

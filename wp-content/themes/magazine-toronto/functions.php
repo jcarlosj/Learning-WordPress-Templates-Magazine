@@ -17,6 +17,21 @@
     /* Define NUEVOS tamaños predeterminados para las imágenes */
     add_image_size( 'imagen-destacada', 1100, 418, true );
 
+    /* Creamos Widgets */
+    function magazine_widgets() {
+        register_sidebar( array(
+            'name'          => __( 'SideBar Testimonios' ),              # Nombre del "Widget"
+            'id'            => 'sidebar-2',                              # Nombre que vamos a usar en el THEME para hacer uso de este "Widget"
+            'description'   => 'Widgets de testimonios',                 # Descripción del "Widget"
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',  # Imprime antes del "Widget"
+            'after_widget'  => '</aside>',                               # Imprime después del "Widget"
+            'before-title'  => '<h3 class="widget-title">',              # Imprime antes del título del Widget
+            'after-title'   => '</h3>',                                  # Imprime después del título del Widget
+        ) );
+    }
+    add_action( 'widgets_init', 'magazine_widgets' );
+    # NOTA : %1$s y %2$s agrega nombres de ID y CLASS predeterminados de WordPress
+
     /* Ocultar la barra de administración en el FrontEnd cuando se está loguedo */
     add_filter( 'show_admin_bar', '__return_false' );
 
