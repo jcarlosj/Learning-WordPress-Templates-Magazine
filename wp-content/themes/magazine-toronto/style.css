@@ -86,6 +86,29 @@ h2#no-imagen-destacada {
     width: 370px;
 }
 
+/* ----------
+   SideBar */
+#testimonios h2 {
+    color: #A00622;
+    font-size: 20px;
+}
+#testimonios .textwidget {
+    background-image: url( 'images/svg_quote.svg' );
+    background-position: left top;
+    background-repeat: no-repeat;
+    color: #767676;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 34px;
+    padding-left: 86px;
+}
+#testimonios .textwidget span {
+    display: block;
+    font-style: normal;
+    text-align: right;
+}
+
+
 footer nav {
     float: left;
     margin-top: 30px;
