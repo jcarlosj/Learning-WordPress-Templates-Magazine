@@ -37,7 +37,28 @@
 				while( $guiaToronto -> have_posts() ) :
 			        $guiaToronto -> the_post();
 			?>
-				<pre><?php var_dump( $guiaToronto ); ?></pre> 
+				<pre><?php #var_dump( $guiaToronto ); ?></pre>
+				<div class="post-guia">
+					<a href="<?php the_permalink(); ?>">
+						<div class="image-post">
+							<?php the_post_thumbnail( 'imagen-guia-toronto' ); ?>
+							<div class="category">
+								<?php the_category(); ?>
+							</div>
+						</div>
+					</a>
+
+					<div class="content-post">
+						<h3><?php the_title(); ?></h3>
+						<?php the_excerpt(); # Contenido abreviado ?>
+						<a href="<?php the_permalink(); ?>">Leer más</a>
+					</div>
+
+					<div class="info-post">
+						<p class="author">Por: <?php the_author(); ?></p>
+						<p class="date"><?php the_date(); ?></p>
+					</div>
+				</div>
 			<?php endwhile; wp_reset_postdata(); ?>
 
 		</div>

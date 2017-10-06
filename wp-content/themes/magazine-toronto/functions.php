@@ -15,7 +15,8 @@
     add_theme_support( 'post-thumbnails' );
 
     /* Define NUEVOS tamaños predeterminados para las imágenes */
-    add_image_size( 'imagen-destacada', 1100, 418, true );
+    add_image_size( 'imagen-destacada', 1100, 418, true );     # Páginas
+    add_image_size( 'imagen-guia-toronto', 350, 210, true );   # Entradas (Post)
 
     /* Creamos Widgets */
     function magazine_widgets() {
