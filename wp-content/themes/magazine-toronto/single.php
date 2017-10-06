@@ -21,6 +21,9 @@
             <?php _e( 'Entrada escrita por: ' ); the_author(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <?php the_content(); ?>
+                <div class="comment">
+                    <?php comment_form(); # Agrega comentarios a cada entrada 'comments_template()' es obsoleta en esta versión ?>
+                </div>
             </article>
         </div>
     <?php endwhile;  ?>
