@@ -56,7 +56,7 @@
 
 					<div class="info">
 						<p class="author">Por: <span><?php the_author(); ?></span> </p>
-						<p class="date"><?php the_date(); ?></p>
+						<p class="date"><?php the_time( get_option( 'date_format' ) ); ?></p>
 						<div class="clearfix"></div>
 					</div>
 				</div>
