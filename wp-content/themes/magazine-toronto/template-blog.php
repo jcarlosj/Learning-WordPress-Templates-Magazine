@@ -21,7 +21,25 @@
 		<?php endif; ?>
 
 		<div id="primary" class="primary">
-	        <?php echo 'Plantilla cargada (template-blog.php)'; #the_content(); ?>
+
+
+			<?php
+				/* Argumentos de busqueda */
+			 	$args = array(
+					'cat'            => array( 6, 5, 4 ),	# Tags ID de las categorías que deseamos mostrar
+					'posts_per_page' => 6,                  # Número de post a publicar
+			        'orderby'        => 'date',             # Ordenar por fecha
+			        'order'          => 'DESC'              # Tipo de ordenamiento
+				);
+				/* WP_Query */
+				$guiaToronto = new WP_Query( $args );
+				/* Validación para impresión de los post solicitados en los argumentos de búsqueda */
+				while( $guiaToronto -> have_posts() ) :
+			        $guiaToronto -> the_post();
+			?>
+				<pre><?php var_dump( $guiaToronto ); ?></pre> 
+			<?php endwhile; wp_reset_postdata(); ?>
+
 		</div>
 	<?php endwhile; ?>
 
