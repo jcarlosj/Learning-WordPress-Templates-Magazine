@@ -22,7 +22,6 @@
 
 		<div id="primary" class="primary">
 
-
 			<?php
 				/* Argumentos de busqueda */
 			 	$args = array(

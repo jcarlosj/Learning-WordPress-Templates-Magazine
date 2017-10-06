@@ -103,7 +103,7 @@ h2#no-imagen-destacada {
     background-position: left top;
     background-repeat: no-repeat;
     color: #767676;
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
     line-height: 34px;
     padding-left: 86px;
@@ -158,7 +158,7 @@ h2#no-imagen-destacada {
 }
 .toronto-guide-entry .content p {
     color: #000000;
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
 }
 .toronto-guide-entry .content a {
@@ -190,6 +190,62 @@ h2#no-imagen-destacada {
     float: right;
     width: 34%;
     text-align: right;
+}
+
+/* ----- Single Post ---- */
+.single .publication {
+    background-color: #EBEBEB;
+    padding: 5px;
+    font-size: 12px;
+}
+.single .publication a,
+.single .publication span {
+    color: #A00622;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* Comments */
+.comment-respond {
+
+}
+.comment-respond h3 {
+    color: #A00622;
+    text-transform: uppercase;
+}
+.comment-respond p {
+    font-size: 14px;
+    margin: 0;
+    padding: 6px 0 0 0;
+}
+.comment-respond span {
+
+}
+.comment-respond label {
+    font-weight: bold;
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+}
+.comment-respond input,
+.comment-respond textarea {
+    display: inline-block;
+    padding: 5px;
+    width: 75%;
+}
+.comment-respond textarea {
+    height: 70px;
+}
+.comment-respond .form-submit {
+    text-align: center;
+}
+.comment-respond .form-submit input[ type = 'submit' ] {
+    background-color: #A00622;
+    border-radius: 3px;
+    border-style: none;
+    color: #FFFFFF;
+    margin: 15px 0 0 0;
+    padding: 5px;
+    width: 200px;
 }
 
 footer nav {

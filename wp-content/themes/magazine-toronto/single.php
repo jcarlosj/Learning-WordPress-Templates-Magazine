@@ -14,16 +14,19 @@
         <?php endif; ?>
 
         <div id="primary" class="primary">
-            <?php edit_post_link( 'Editar entrada', '<p>', '</p>');                      # edit_post_link(); sin personalización. Enlace para la edición de la entrada desde el Front-End hacia el Back-End ?>
-            <?php the_tags( __( 'Etiquetas del post: ' ), ' | ', '<br />' );  # the_tags(); sin personalización ?>
-            <?php _e( 'Categorizado en: ' ); the_category( ' | ', '<br />' ); # the_category(); sin personalización ?>
-            <br />
-            <?php _e( 'Entrada escrita por: ' ); the_author(); ?>
+            <div class="publication">
+                <?php edit_post_link( 'Editar entrada', '<p>', '</p>');                      # edit_post_link(); sin personalización. Enlace para la edición de la entrada desde el Front-End hacia el Back-End ?>
+                <?php the_tags( __( 'Etiquetas del post: ' ), ' | ', '<br />' );  # the_tags(); sin personalización ?>
+                <?php _e( 'Categorizado en: ' ); the_category( ' | ', '<br />' ); # the_category(); sin personalización ?>
+                <br />
+                <?php _e( 'Entrada escrita por: ' ); ?>
+                <span> <?php the_author(); ?> </span>
+            </div>
+
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <?php the_content(); ?>
-                <div class="comment">
-                    <?php comment_form(); # Agrega comentarios a cada entrada 'comments_template()' es obsoleta en esta versión ?>
-                </div>
+                <?php comment_form(); # Agrega comentarios a cada entrada 'comments_template()' es obsoleta en esta versión ?>
+                <div class="clearfix"></div>
             </article>
         </div>
     <?php endwhile;  ?>
