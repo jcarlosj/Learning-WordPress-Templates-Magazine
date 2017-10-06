@@ -14,6 +14,10 @@
         <?php endif; ?>
 
         <div id="primary" class="primary">
+            <?php the_tags( __( 'Etiquetas del post: ' ), ' | ', '<br />' );  # the_tags(); sin personalización ?>
+            <?php _e( 'Categorizado en: ' ); the_category( ' | ', '<br />' ); # the_category(); sin personalización ?>
+            <br />
+            <?php _e( 'Entrada escrita por: ' ); the_author(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <?php the_content(); ?>
             </article>
