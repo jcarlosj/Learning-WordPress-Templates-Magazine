@@ -14,6 +14,7 @@
         <?php endif; ?>
 
         <div id="primary" class="primary">
+            <?php edit_post_link( 'Editar entrada', '<p>', '</p>');                      # edit_post_link(); sin personalización. Enlace para la edición de la entrada desde el Front-End hacia el Back-End ?>
             <?php the_tags( __( 'Etiquetas del post: ' ), ' | ', '<br />' );  # the_tags(); sin personalización ?>
             <?php _e( 'Categorizado en: ' ); the_category( ' | ', '<br />' ); # the_category(); sin personalización ?>
             <br />
