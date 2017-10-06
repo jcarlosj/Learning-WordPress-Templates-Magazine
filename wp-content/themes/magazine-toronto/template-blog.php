@@ -26,7 +26,7 @@
 			<?php
 				/* Argumentos de busqueda */
 			 	$args = array(
-					'cat'            => array( 6, 5, 4 ),	# Tags ID de las categorías que deseamos mostrar
+					'cat'            => array( 5, 4, 3 ),	# Tags ID de las categorías que deseamos mostrar
 					'posts_per_page' => 6,                  # Número de post a publicar
 			        'orderby'        => 'date',             # Ordenar por fecha
 			        'order'          => 'DESC'              # Tipo de ordenamiento
@@ -37,26 +37,27 @@
 				while( $guiaToronto -> have_posts() ) :
 			        $guiaToronto -> the_post();
 			?>
-				<pre><?php #var_dump( $guiaToronto ); ?></pre>
-				<div class="post-guia">
-					<a href="<?php the_permalink(); ?>">
-						<div class="image-post">
+				<div class="toronto-guide-entry">
+					<div class="image">
+						<a href="<?php the_permalink(); ?>">
 							<?php the_post_thumbnail( 'imagen-guia-toronto' ); ?>
-							<div class="category">
-								<?php the_category(); ?>
-							</div>
+						</a>
+						<div class="category">
+							<?php the_category(); ?>
 						</div>
-					</a>
+					</div>
 
-					<div class="content-post">
+					<div class="content">
 						<h3><?php the_title(); ?></h3>
 						<?php the_excerpt(); # Contenido abreviado ?>
 						<a href="<?php the_permalink(); ?>">Leer más</a>
+						<div class="clearfix"></div>
 					</div>
 
-					<div class="info-post">
-						<p class="author">Por: <?php the_author(); ?></p>
+					<div class="info">
+						<p class="author">Por: <span><?php the_author(); ?></span> </p>
 						<p class="date"><?php the_date(); ?></p>
+						<div class="clearfix"></div>
 					</div>
 				</div>
 			<?php endwhile; wp_reset_postdata(); ?>

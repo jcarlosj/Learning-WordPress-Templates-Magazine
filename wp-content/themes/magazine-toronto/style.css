@@ -65,6 +65,7 @@ header nav ul li a {
 
 #imagen-destacada {
     position: relative;
+    margin-bottom: 20px;
 }
 #imagen-destacada h2 {
     background-color: #A00622;
@@ -113,6 +114,83 @@ h2#no-imagen-destacada {
     text-align: right;
 }
 
+/* ----------
+   Blog: Guía Toronto */
+.toronto-guide-entry {
+    float: left;
+    margin-right: 26px;
+    margin-bottom: 20px;
+    width: 330px;
+}
+.toronto-guide-entry .image {
+    position: relative;
+}
+.toronto-guide-entry .image .category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.toronto-guide-entry .image .category .post-categories {
+    margin: 0;
+    padding: 0;
+}
+
+.toronto-guide-entry .image .category ul {
+    list-style: none;
+}
+.toronto-guide-entry .image .category ul li {
+    background-color: #A00622;
+    padding: 0 5px;
+}
+.toronto-guide-entry .image .category ul li a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #FFFFFF;
+    text-transform: lowercase;
+}
+.toronto-guide-entry .content {
+    padding: 10px;
+}
+.toronto-guide-entry .content h3 {
+    color: #A00622;
+    margin: 0;
+    padding: 0;
+}
+.toronto-guide-entry .content p {
+    color: #000000;
+    font-size: 12px;
+    text-align: justify;
+}
+.toronto-guide-entry .content a {
+    background-color: #A00622;
+    border-radius: 3px;
+    color: #FFFFFF;
+    float: right;
+    font-size: 14px;
+    padding: 5px;
+    text-decoration: none;
+}
+.toronto-guide-entry .info {
+    background-color: #EBEBEB;
+    padding: 5px;
+}
+.toronto-guide-entry .info p {
+    color: #000000;
+    font-size: 11px;
+    font-weight: normal;
+}
+.toronto-guide-entry .info p.author {
+    float: left;
+    width: 64%;
+}
+.toronto-guide-entry .info p.author span {
+    color: #A00622;
+}
+.toronto-guide-entry .info p.date {
+    float: right;
+    width: 34%;
+    text-align: right;
+}
 
 footer nav {
     float: left;
