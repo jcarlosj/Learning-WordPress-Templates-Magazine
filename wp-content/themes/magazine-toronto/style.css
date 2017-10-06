@@ -248,6 +248,13 @@ h2#no-imagen-destacada {
     width: 200px;
 }
 
+/* ----------
+   Page-Template: Consejos */
+h2.tips {
+    color: #A00622;
+    font-size: 20px;
+}
+
 footer nav {
     float: left;
     margin-top: 30px;
