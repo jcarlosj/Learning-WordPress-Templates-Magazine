@@ -120,7 +120,7 @@ h2#no-imagen-destacada {
     float: left;
     margin-right: 26px;
     margin-bottom: 20px;
-    width: 330px;
+    width: 324px;
 }
 .toronto-guide-entry .image {
     position: relative;
@@ -253,6 +253,53 @@ h2#no-imagen-destacada {
 h2.tips {
     color: #A00622;
     font-size: 20px;
+}
+
+/* ----------
+   Page-Template: Contacto */
+.page-template-template-no-sidebar #primary.no-sidebar {
+   width: 100%;
+}
+
+.page-template-template-no-sidebar #primary.no-sidebar.post-16 h3 {
+    color: #A00622;
+    font-size: 20px;
+    text-align: center;
+}
+.page-template-template-no-sidebar #primary.no-sidebar.post-16 .wpcf7 {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 40px;
+    width: 60%;
+    -webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,.2);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.2);
+}
+.page-template-template-no-sidebar #primary.no-sidebar.post-16 .wpcf7 p {
+    color: #A00622;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.page-template-template-no-sidebar #primary.no-sidebar.post-16 .wpcf7 input,
+.page-template-template-no-sidebar #primary.no-sidebar.post-16 .wpcf7 textarea {
+    border-radius: 5px;
+    border: 1px solid #888888;
+    height: 32px;
+    margin-top: 5px;
+    width: 100%;
+}
+.page-template-template-no-sidebar #primary.no-sidebar.post-16 .wpcf7 textarea {
+    height: 200px;
+}
+.page-template-template-no-sidebar #primary.no-sidebar.post-16 .wpcf7 input[ type = 'submit' ] {
+    background-color: #A00622;
+    font-weight: bold;
+    font-style: 20px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: auto;
+    padding: 8px 12px;
 }
 
 footer nav {
