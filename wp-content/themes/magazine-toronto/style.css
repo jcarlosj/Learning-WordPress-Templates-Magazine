@@ -303,6 +303,8 @@ h2.tips {
 }
 /* ----------
    Front-Page: Inicio */
+
+/* Sección: Qué visitar */
 #que-visitar .widget_sp_image h2.widgettitle {
     display: none;
 }
@@ -322,6 +324,32 @@ h2.tips {
     display: inline-block;
     text-align: center;
     width: 33%;
+}
+
+/* Sección: Información y últimos dos consejos */
+#info-and-tips {
+
+}
+#info-and-tips div.information  {
+    float: left;
+    margin-right: 20px;
+    width: 350px;
+}
+#info-and-tips div.last-tips {
+    float: left;
+    width: 720px;
+}
+#info-and-tips div.last-tips .tip {
+    float: right;
+    margin-right: 10px;
+    width: 350px;
+}
+#info-and-tips div.last-tips .tip a h3 {
+    color: #A00622;
+    font-size: 18px;
+}
+#info-and-tips div.last-tips .tip a {
+    text-decoration: none;
 }
 
 footer nav {
