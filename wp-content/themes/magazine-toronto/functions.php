@@ -30,6 +30,15 @@
             'before-title'  => '<h3 class="widget-title">',              # Imprime antes del título del Widget
             'after-title'   => '</h3>',                                  # Imprime después del título del Widget
         ) );
+        register_sidebar( array(
+            'name'          => __( 'Imágenes Página Principal' ),        # Nombre del "Widget"
+            'id'            => 'front-page',                             # Nombre que vamos a usar en el THEME para hacer uso de este "Widget"
+            'description'   => 'Widgets para página principal',          # Descripción del "Widget"
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',    # Imprime antes del "Widget"
+            'after_widget'  => '</div>',                                 # Imprime después del "Widget"
+            'before-title'  => '<h3 class="widget-title">',              # Imprime antes del título del Widget
+            'after-title'   => '</h3>',                                  # Imprime después del título del Widget
+        ) );
     }
     add_action( 'widgets_init', 'magazine_widgets' );
     # NOTA : %1$s y %2$s agrega nombres de ID y CLASS predeterminados de WordPress

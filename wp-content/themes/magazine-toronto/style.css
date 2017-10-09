@@ -301,6 +301,28 @@ h2.tips {
     width: auto;
     padding: 8px 12px;
 }
+/* ----------
+   Front-Page: Inicio */
+#que-visitar .widget_sp_image h2.widgettitle {
+    display: none;
+}
+#que-visitar .widget_sp_image p {
+    background-color: #A00622;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 7px 0;
+    text-align: center;
+}
+#que-visitar .widget_sp_image .widget_sp_image-description {
+    padding: 0 40px;
+}
+#que-visitar .widget_sp_image {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+}
 
 footer nav {
     float: left;
