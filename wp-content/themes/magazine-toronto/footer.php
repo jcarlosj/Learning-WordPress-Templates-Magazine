@@ -11,5 +11,6 @@
                 <p>Visita a Toronto <?php echo date( 'Y' ); ?></p>
             </div>  <!-- .copyright -->
         </footer>
+        <?php wp_footer(); ?>
     </body>
 </html>

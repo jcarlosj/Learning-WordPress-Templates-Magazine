@@ -1,8 +1,13 @@
 <?php
     /* Hook: Normalize */
     function magazine_scripts() {
-        wp_enqueue_style( 'normalize', get_template_directory_uri(). '/css/normalize.css' );    # Normalize
-        wp_enqueue_style( 'style-theme', get_stylesheet_uri() );                                # Hoja de estilos principal
+        wp_enqueue_style( 'normalize', get_template_directory_uri(). '/css/normalize.css' );           # Normalize
+        wp_enqueue_style( 'bxslider', get_template_directory_uri(). '/css/jquery.bxslider.css' );      # BxSlider (CSS File)
+        wp_enqueue_style( 'style-theme', get_stylesheet_uri() );                                       # Hoja de estilos principal
+
+        wp_enqueue_script( 'jquery' );      # Implementamos la versión jQuery que trae WordPress
+        wp_enqueue_script( 'bxsliderjs', get_template_directory_uri(). '/js/jquery.bxslider.min.js', array( 'jquery' ), '4.2.12', true ); # BxSlider (JavaScript File)
+        wp_enqueue_script( 'scripts', get_template_directory_uri(). '/js/scripts.js', array( 'jquery' ), '1.0', true ); # Archivo JS principal para el proyecto (JavaScript File)
     }
     add_action( 'wp_enqueue_scripts', 'magazine_scripts' );
 
