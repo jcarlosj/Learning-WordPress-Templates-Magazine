@@ -9,8 +9,11 @@
 
         /* Solo permitirá cargar el Script y el Estilo de BxSlider en la página de inicio */
         if( is_page( 'inicio' ) ) {
-            wp_enqueue_style( 'bxslider', get_template_directory_uri(). '/css/jquery.bxslider.css' );      # BxSlider (CSS File)
-            wp_enqueue_script( 'bxsliderjs', get_template_directory_uri(). '/js/jquery.bxslider.min.js', array( 'jquery' ), '4.2.12', true ); # BxSlider (JavaScript File)
+            wp_register_script( 'bxsliderjs', get_template_directory_uri(). '/js/jquery.bxslider.min.js', array( 'jquery' ), '4.2.12', true );  # Registra # BxSlider (CSS File)
+            wp_register_style( 'bxslidercss', get_template_directory_uri(). '/css/jquery.bxslider.css' );                                       # Registra BxSlider (JavaScript File)
+
+            wp_enqueue_style( 'bxslidercss' ); # BxSlider (CSS File)
+            wp_enqueue_script( 'bxsliderjs' ); # BxSlider (JavaScript File)
         }
         wp_enqueue_script( 'scripts', get_template_directory_uri(). '/js/scripts.js', array( 'jquery' ), '1.0', true ); # Archivo JS principal para el proyecto (JavaScript File)
     }

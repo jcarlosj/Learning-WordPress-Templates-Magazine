@@ -1,11 +1,3 @@
-<?php
-    global $wp_query;
-    $thePostID = $wp_query -> post -> ID;
-    $postSlug = $wp_query -> post -> post_name;
-    echo 'ID: ' .$thePostID. ' <br />Slug: ' .$postSlug. ' <br />';
-
-    echo 'ID: ' .get_query_var( 'p' ). ' <br />Slug: ' .get_query_var( 'name' );
-?>
 <?php get_header(); ?>
     <div id="slider">
         <ul class="bxslider">
