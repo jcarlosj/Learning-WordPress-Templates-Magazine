@@ -13,9 +13,12 @@
                 $slider = new WP_Query( $args );
                 while( $slider -> have_posts() ) : $slider -> the_post();
             ?>
-                <li><?php the_post_thumbnail( 'imagen-destacada' ); ?></li>
+                <li>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail( 'imagen-destacada' ); ?>
+                    </a>
+                </li>
             <?php endwhile; wp_reset_postdata(); ?>
-
         </ul>
     </div>
 

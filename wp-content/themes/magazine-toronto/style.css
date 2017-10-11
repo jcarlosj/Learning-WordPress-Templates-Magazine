@@ -304,6 +304,20 @@ h2.tips {
 /* ----------
    Front-Page: Inicio */
 
+/* Slider: BxSlider */
+#slider .bx-wrapper .bx-pager.bx-default-pager a {
+    background-color: #9B9B9B;
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+}
+#slider .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background-color: #A00622;
+}
+#slider .bx-wrapper .bx-pager {
+    bottom: -40px;
+}
+
 /* Sección: Qué visitar */
 #que-visitar .widget_sp_image h2.widgettitle {
     display: none;
