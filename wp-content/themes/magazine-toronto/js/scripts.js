@@ -1,4 +1,4 @@
 /* JavaScript File */
 ( function( $ ) {
-    alert( 'Funciona!' );
+    $( '.bxslider' ) .bxSlider();
 }) (jQuery);

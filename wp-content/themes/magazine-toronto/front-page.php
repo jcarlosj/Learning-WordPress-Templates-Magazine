@@ -1,4 +1,24 @@
 <?php get_header(); ?>
+
+    <div id="slider">
+        <ul class="bxslider">
+            <?php
+                $args = array(
+                    'posts_per_page' => 4,  # Cantidad de publicaciones por página
+                    'orderby' => 'date',    # Ordenados por fecha
+                    'order' => 'DESC',      # Ordenados de forma ascendente
+                    'post_type' => 'post'   # Tipo de públicación
+                );
+
+                $slider = new WP_Query( $args );
+                while( $slider -> have_posts() ) : $slider -> the_post();
+            ?>
+                <li><?php the_post_thumbnail( 'imagen-destacada' ); ?></li>
+            <?php endwhile; wp_reset_postdata(); ?>
+
+        </ul>
+    </div>
+
     <div id="que-visitar">
         <?php dynamic_sidebar( 'front-page' ); ?>
     </div>
