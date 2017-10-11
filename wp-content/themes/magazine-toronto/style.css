@@ -302,6 +302,24 @@ h2.tips {
     padding: 8px 12px;
 }
 /* ----------
+   Page: Category.php */
+h1.category-title {
+    color: #A00622;
+    font-size: 26px;
+}
+
+a.more-link {
+    background-color: #A00622;
+    color: #FFFFFF;
+    float: right;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+/* ----------
    Front-Page: Inicio */
 
 /* Slider: BxSlider */
