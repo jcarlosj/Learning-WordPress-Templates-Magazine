@@ -4,7 +4,11 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-        <title></title>
+        <title>
+            <?php wp_title( '' ); ?>
+            <?php if( wp_title( '', false ) ) : echo ' : '; endif; ?>
+            <?php bloginfo( 'name' ); ?>
+        </title>
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
